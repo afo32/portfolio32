@@ -51,7 +51,7 @@ export default function Home({ projects }) {
 
         <div className="hero-photo" style={{ position: "relative" }}>
           <div style={{ position: "relative", borderRadius: "10px", overflow: "hidden", paddingTop: "133.33%", background: "var(--surface)" }}>
-            <div style={{ position: "absolute", inset: 0 }}>
+            <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0 }}>
               <img
                 src="/images/juan.jpg"
                 alt="Juan Carlos Afonso Tangerino"
@@ -60,7 +60,7 @@ export default function Home({ projects }) {
                   filter: "grayscale(1) contrast(1.08) brightness(0.92) sepia(0.18) hue-rotate(-10deg)",
                 }}
               />
-              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(12,13,16,0) 55%, rgba(12,13,16,0.55) 100%)" }} />
+              <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, background: "linear-gradient(180deg, rgba(12,13,16,0) 55%, rgba(12,13,16,0.55) 100%)" }} />
               {[
                 { top: 14, left: 14, borderTop: "2px solid var(--accent)", borderLeft: "2px solid var(--accent)" },
                 { top: 14, right: 14, borderTop: "2px solid var(--accent)", borderRight: "2px solid var(--accent)" },

@@ -272,7 +272,7 @@ export function Header() {
       </header>
 
       {showLogin && (
-        <div style={{ position: "fixed", inset: 0, background: "rgba(0,0,0,0.6)", zIndex: 50, display: "flex", alignItems: "center", justifyContent: "center", padding: "20px" }}>
+        <div style={{ position: "fixed", top: 0, left: 0, right: 0, bottom: 0, background: "rgba(0,0,0,0.6)", zIndex: 50, display: "flex", alignItems: "center", justifyContent: "center", padding: "20px" }}>
           <div style={{ background: "var(--surface)", border: "1px solid var(--line)", borderRadius: "10px", padding: "24px", width: "320px" }}>
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: "14px" }}>
               <span style={{ fontFamily: "'IBM Plex Mono', monospace", fontSize: "13px", color: "var(--accent)" }}>// admin login</span>

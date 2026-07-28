@@ -259,12 +259,12 @@ export function AdminBlockGallery({ blocks, onChange }) {
               onDragOver={(e) => { e.preventDefault(); setOverIndex(i); }}
               onDrop={() => handleDrop(i)}
               style={{
-                position: "absolute", inset: 0, zIndex: 2, cursor: "grab",
+                position: "absolute", top: 0, left: 0, right: 0, bottom: 0, zIndex: 2, cursor: "grab",
                 outline: overIndex === i ? "2px solid var(--accent)" : "none",
                 outlineOffset: "-2px",
               }}
             >
-              <div style={{ position: "absolute", inset: 0, pointerEvents: "none" }}>
+              <div style={{ position: "absolute", top: 0, left: 0, right: 0, bottom: 0, pointerEvents: "none" }}>
                 {b.type === "text" ? (
                   <div style={{ padding: "18px", height: "100%", display: "flex", alignItems: "center" }}>
                     <p style={{ color: "var(--text)", fontStyle: "italic", lineHeight: 1.6, fontSize: "14.5px", margin: 0 }}>{b.content}</p>
