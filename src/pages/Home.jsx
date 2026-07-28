@@ -50,31 +50,33 @@ export default function Home({ projects }) {
         </div>
 
         <div className="hero-photo" style={{ position: "relative" }}>
-          <div style={{ position: "relative", borderRadius: "10px", overflow: "hidden", aspectRatio: "3/4", background: "var(--surface)" }}>
-            <img
-              src="/images/juan.jpg"
-              alt="Juan Carlos Afonso Tangerino"
-              style={{
-                width: "100%", height: "100%", objectFit: "cover",
-                filter: "grayscale(1) contrast(1.08) brightness(0.92) sepia(0.18) hue-rotate(-10deg)",
-              }}
-            />
-            <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(12,13,16,0) 55%, rgba(12,13,16,0.55) 100%)" }} />
-            {[
-              { top: 14, left: 14, borderTop: "2px solid var(--accent)", borderLeft: "2px solid var(--accent)" },
-              { top: 14, right: 14, borderTop: "2px solid var(--accent)", borderRight: "2px solid var(--accent)" },
-              { bottom: 14, left: 14, borderBottom: "2px solid var(--accent)", borderLeft: "2px solid var(--accent)" },
-              { bottom: 14, right: 14, borderBottom: "2px solid var(--accent)", borderRight: "2px solid var(--accent)" },
-            ].map((s, i) => (
-              <div key={i} style={{ position: "absolute", width: "22px", height: "22px", ...s }} />
-            ))}
-            <span style={{
-              position: "absolute", bottom: "14px", left: "50%", transform: "translateX(-50%)",
-              fontFamily: "'IBM Plex Mono', monospace", fontSize: "11px", color: "var(--accent)",
-              letterSpacing: "0.05em",
-            }}>
-              MADRID, ES
-            </span>
+          <div style={{ position: "relative", borderRadius: "10px", overflow: "hidden", paddingTop: "133.33%", background: "var(--surface)" }}>
+            <div style={{ position: "absolute", inset: 0 }}>
+              <img
+                src="/images/juan.jpg"
+                alt="Juan Carlos Afonso Tangerino"
+                style={{
+                  width: "100%", height: "100%", objectFit: "cover", display: "block",
+                  filter: "grayscale(1) contrast(1.08) brightness(0.92) sepia(0.18) hue-rotate(-10deg)",
+                }}
+              />
+              <div style={{ position: "absolute", inset: 0, background: "linear-gradient(180deg, rgba(12,13,16,0) 55%, rgba(12,13,16,0.55) 100%)" }} />
+              {[
+                { top: 14, left: 14, borderTop: "2px solid var(--accent)", borderLeft: "2px solid var(--accent)" },
+                { top: 14, right: 14, borderTop: "2px solid var(--accent)", borderRight: "2px solid var(--accent)" },
+                { bottom: 14, left: 14, borderBottom: "2px solid var(--accent)", borderLeft: "2px solid var(--accent)" },
+                { bottom: 14, right: 14, borderBottom: "2px solid var(--accent)", borderRight: "2px solid var(--accent)" },
+              ].map((s, i) => (
+                <div key={i} style={{ position: "absolute", width: "22px", height: "22px", ...s }} />
+              ))}
+              <span style={{
+                position: "absolute", bottom: "14px", left: "50%", transform: "translateX(-50%)",
+                fontFamily: "'IBM Plex Mono', monospace", fontSize: "11px", color: "var(--accent)",
+                letterSpacing: "0.05em",
+              }}>
+                MADRID, ES
+              </span>
+            </div>
           </div>
         </div>
       </section>
